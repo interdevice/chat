@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/js_1.9/jquery-ui-1.9.1.custom.min.js"></script>
+   	<script type="text/javascript">
+   	$(document).ready(function() {
+   		window.addEventListener('load', carregar('http://localhost:5000 #dialog'));
+   	});
+   	</script>
+    <style type="text/css">
+    	div#carregar {
+		    border: 1px solid red;
+		    width: 240px;
+		    height: 300px;
+		    position: absolute;
+		    right: 60px;
+		    top: 200px;
+		}
+    </style>
+  </head>
+<body onload="">
+<div id="carregar">
+	<div class="titulo"></div>
+</div>
+</body>
+ <script>
+    function carregar(pagina){
+        $("#carregar").load(pagina);
+    }
+</script>
+</html>

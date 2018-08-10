@@ -1,2 +1,1 @@
-# chat
-repo para chat
+Chat em Python# appchat
